@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teaching Students to Use Progrmming Error Messages — CompEd'23 Working Group 1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+</head>
+<body>
+<main>
+  <header>
+    <h1>Teaching Programming Error Message Understanding</h1>
+    <p>A Supplementary Page for the CompEd 2023 Working Group on Teaching Students to use Programming Error Messages</p>
+  </header>
+
+  <h2>Materials</h2>
+  <p>
+  Please use and/or adapt the following lessons in your classroom:
+  </p>
+
+  <h3>Written lessons and “error hunt” activities</h3>
+  <p>
+  <a href="https://zenodo.org/records/13731142">All written lessons and activities are available on Zenodo</a>.
+  </p>
+
+  <h3>Video lessons</h3>
+  <ul>
+    <li><a href="https://zenodo.org/records/14954924">Video lesson for the C programming language (GCC on the command line)</a></li>
+    <li><a href="https://zenodo.org/records/14981437">Video lesson for the Python programming language (Python 3.12 in VS Code)</a></li>
+    <li><a href="https://zenodo.org/records/14978523">Video lesson for the Java programming language (Java in IntelliJ)</a></li>
+  </ul>
+
+  <h2>The report</h2>
+  <p>
+  The complete report is available on the <a href="https://dl.acm.org/doi/10.1145/3598579.3689377">ACM Digital Library</a>.
+  </p>
+
+  <h3>Abstract</h3>
+  <p>
+  About a decade ago there was a sharp increase in the number of research publications focusing on programming error messages. The majority of this work focused on improving or “enhancing” compiler error messages to make them easier for humans, especially novice programmers, to interpret and use more effectively. Little research has been published on explicitly teaching students how to effectively utilize error messages, or leveraging programming error messages as learning opportunities. However, there is no shortage of research showing that error and warning messages present barriers to students learning to program. Additionally, unhelpful and/or unfriendly error messages can cause frustration and negative emotions. We operate on the premise that not utilizing programming error and warning messages effectively, or at all, increases the difficulty of learning to program, and the undesired effects that this is known to have. As compiler messages vary by programming language and/or development environment, both in message and presentation, lessons on interpreting them are not typically included in mainstream educational materials. We believe this gap can be filled and that students can learn to use error messages to their advantage. Further, we believe that teaching students how to read and use error messages can have a significant positive impact on the learning experience for novice programmers. This work presents research on teaching novice programmers how to use programming error messages. Reported here are results from (a) a global survey of computing instructors investigating teaching the use of error / warning messages to novice programmers, (b) a multi-national pilot survey of 345 students about their experience with and attitudes toward error messages, (c) a search for existing online resources created and used by computing faculty, as well as (d) results of an empirical study with 1061 student participants testing an example lesson on using programming language use. The data show our single class-period example lesson makes a difference in student attitude toward programming error messages and their ability to use the messages.
+  </p>
+
+  <h3 id="citation">Citation</h3>
+  <div>
+  <pre><code>@inproceedings{Bouvier2024teaching,
+    author = {Bouvier, Dennis J and Lovellette, Ellie and Santos, Eddie Antonio and Becker, Brett A. and Dasigi, Venu G. and Forden, Jack and Glebova, Olga and Joshi, Swaroop and Kurkovsky, Stan and Russell, Se\'{a}n},
+    title = {Teaching Programming Error Message Understanding},
+    year = {2024},
+    isbn = {9798400702228},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    doi = {10.1145/3598579.3689377},
+    booktitle = {Working Group Reports on 2023 ACM Conference on Global Computing Education},
+    pages = {1–30},
+    numpages = {30},
+    keywords = {computer error messages, computing education, error messages, novice programmers, programming error messages, runtime errors, warning messages},
+    location = {Hyderabad, India},
+    series = {CompEd 2023}
+}</code></pre>
+  </div>
+  <script>
+    (function () {
+      const div = document.querySelector('#citation+div');
+      const button = document.createElement('button');
+      const baseText = "Copy BibTeX";
+      button.innerText = baseText;
+      button.addEventListener('click', async () => {
+        const bibtex = div.querySelector('pre>code').innerHTML;
+        try {
+          await navigator.clipboard.writeText(bibtex);
+          button.innerText = `${baseText} - Copied!`;
+        } catch (error) {
+          button.innerText = `Something went wrong copying text :(`;
+        }
+      });
+      div.appendChild(button);
+    }())
+  </script>
+
+  <h2>The team</h2>
+  <p>
+    <img src="wg.jpeg" alt="A group picture of the members of CompEd WG1, during the working group sprint in Hyderabad, India. Top-row (left-to-right): Swaroop Joshi, Dennis J Bouvier, Brett A. Becker, Ellie Lovellette, Seán Russell; bottom row, (left-to-right): Eddie Antonio Santos, Olga Glebova, Jack Forden, Stan Kurkovsky, Venu Dasigi.">
+  </p>
+</main>
+</body>
+</html>
